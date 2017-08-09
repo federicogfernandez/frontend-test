@@ -1,0 +1,21 @@
+@import "../../scss/constants";
+
+.breadcrumb {
+  padding: $padding 0;
+
+  ul {
+    li {
+      display: inline;
+      color: $grey;
+      font-size: 1.16rem;
+
+      span {
+        margin: 0 $half-padding;
+      }
+
+      &:last-child {
+        font-weight: bold;
+      }
+    }
+  }
+}

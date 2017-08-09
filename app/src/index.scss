@@ -1,0 +1,18 @@
+@import 'scss/constants';
+@import 'scss/mixins';
+
+@import 'scss/reset';
+
+html {
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 12px;
+}
+
+body {
+  min-width: 1024px;
+  background: $light-grey;
+}
+
+* {
+  box-sizing: border-box;
+}

@@ -1,0 +1,28 @@
+@import "../../scss/constants";
+@import "../../scss/mixins";
+
+.search-box {
+  width: calc(100% - 84px);
+  display: inline-block;
+
+  input[type=text] {
+    width: calc(100% - 37px);
+    font-size: 1.5rem;
+    color: $grey;
+    padding: $half-padding;
+    border: none;
+  }
+
+  input[type=submit] {
+    width: 37px;
+    height: 37px;
+    border: none;
+    float: right;
+    background: $light-grey url('/img/ic_Search.png') center center no-repeat;
+    background-size: 50%;
+
+    @include highres {
+      background-image: url('/img/ic_Search@2x.png');
+    }
+  }
+}

@@ -1,0 +1,31 @@
+@import "../../scss/constants";
+@import "../../scss/mixins";
+
+header {
+  width: 100%;
+  background: $yellow;
+  padding: 8px 0;
+
+  .header-container {
+    width: 982px;
+    margin: 0 auto;
+    text-align: right;
+  }
+
+  .logo {
+    display: inline-block;
+    float: left;
+    width: 53px;
+    height: 38px;
+    background: url('/img/Logo_ML.png') no-repeat;
+    background-size: contain;
+
+    @include highres {
+      background-image: url('/img/Logo_ML@2x.png');
+    }
+
+    span {
+      display: none;
+    }
+  }
+}
